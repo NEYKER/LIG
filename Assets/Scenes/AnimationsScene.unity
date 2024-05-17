@@ -489,7 +489,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &139394641
 Transform:
@@ -555,6 +555,215 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139394640}
   m_Mesh: {fileID: 4300004, guid: 47616bd0cda748d4cbedcfc908506b9d, type: 3}
+--- !u!1 &141956227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 141956228}
+  - component: {fileID: 141956230}
+  - component: {fileID: 141956229}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &141956228
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141956227}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1168734183}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -0.20000002, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &141956229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141956227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Go to \nShooting Scene"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 0.1
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 0
+  m_fontSizeMax: 0.1
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &141956230
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141956227}
+  m_CullTransparentMesh: 1
+--- !u!1 &157544272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 157544273}
+  - component: {fileID: 157544275}
+  - component: {fileID: 157544274}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &157544273
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157544272}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1168734183}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &157544274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157544272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 100
+--- !u!222 &157544275
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157544272}
+  m_CullTransparentMesh: 1
 --- !u!1 &164457287
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,7 +780,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &164457288
 Transform:
@@ -638,38 +847,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164457287}
   m_Mesh: {fileID: 4300002, guid: 47616bd0cda748d4cbedcfc908506b9d, type: 3}
---- !u!1 &170171480
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1236741982080262, guid: b99944bf0f66a4643ac9a98799610529, type: 2}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 170171481}
-  m_Layer: 0
-  m_Name: Reflection Probes
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &170171481
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 4520442204395672, guid: b99944bf0f66a4643ac9a98799610529, type: 2}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 170171480}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 202063127}
-  - {fileID: 1145444334}
-  m_Father: {fileID: 665423900}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &171917004
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,7 +962,7 @@ RectTransform:
   - {fileID: 1234497137}
   - {fileID: 1353914377}
   m_Father: {fileID: 785620486}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -970,7 +1147,7 @@ GameObject:
   - component: {fileID: 202063127}
   - component: {fileID: 202063128}
   m_Layer: 0
-  m_Name: Reflection Probe Behind Wall
+  m_Name: Reflection Probe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -984,11 +1161,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202063126}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.48, y: 1.49, z: 2.38}
+  m_LocalPosition: {x: -1.69, y: 1.207, z: 4.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 170171481}
-  m_RootOrder: 0
+  m_Father: {fileID: 665423900}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!215 &202063128
 ReflectionProbe:
@@ -1003,12 +1180,12 @@ ReflectionProbe:
   m_Mode: 0
   m_RefreshMode: 0
   m_TimeSlicingMode: 0
-  m_Resolution: 32
+  m_Resolution: 256
   m_UpdateFrequency: 0
-  m_BoxSize: {x: 4.948274, y: 2.5, z: 1.25}
-  m_BoxOffset: {x: -1.1908615, y: -0.3228073, z: -0.028196633}
-  m_NearClip: 0.3
-  m_FarClip: 1000
+  m_BoxSize: {x: 10, y: 5, z: 10}
+  m_BoxOffset: {x: 0, y: 0, z: 0}
+  m_NearClip: 0.1
+  m_FarClip: 10
   m_ShadowDistance: 100
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -1039,7 +1216,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &215954751
 Transform:
@@ -1121,7 +1298,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &219756760
 Transform:
@@ -1203,7 +1380,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &304652156
 Transform:
@@ -1367,7 +1544,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &318621435
 Transform:
@@ -1466,7 +1643,7 @@ RectTransform:
   - {fileID: 1910164881}
   - {fileID: 36859911}
   m_Father: {fileID: 785620486}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1575,7 +1752,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &337705029
 Transform:
@@ -1658,7 +1835,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &363545490
 Transform:
@@ -1929,18 +2106,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402884832}
-  m_LocalRotation: {x: -0, y: 0.03428982, z: -0, w: 0.99941194}
-  m_LocalPosition: {x: 0, y: 0, z: 1.303}
+  m_LocalRotation: {x: 0.10896907, y: 0.21283916, z: -0.061779074, w: 0.9690246}
+  m_LocalPosition: {x: 0, y: 0, z: 1.245}
   m_LocalScale: {x: 0.62285, y: 0.62285, z: 0.62285}
   m_Children:
   - {fileID: 785620486}
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 3.93, z: 0}
+  m_LocalEulerAnglesHint: {x: 13.738, y: 24.254, z: -4.33}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 2.249, y: 1.442}
-  m_SizeDelta: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 2.226, y: 1.577}
+  m_SizeDelta: {x: 1, y: 1.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &412689235
 GameObject:
@@ -1958,7 +2135,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &412689236
 Transform:
@@ -2040,7 +2217,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &447440542
 Transform:
@@ -2220,6 +2397,49 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471883416}
   m_Mesh: {fileID: 4300008, guid: ff6dc36862fe41641bb21568d92147c9, type: 3}
+--- !u!1 &492915435
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 492915437}
+  - component: {fileID: 492915436}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &492915436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492915435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5da4ec4bbeb3cea4dac5e75ad77af019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &492915437
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492915435}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &525301527
 GameObject:
   m_ObjectHideFlags: 0
@@ -2334,7 +2554,7 @@ RectTransform:
   - {fileID: 1085598169}
   - {fileID: 44230099}
   m_Father: {fileID: 785620486}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2443,7 +2663,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &588926136
 Transform:
@@ -2526,7 +2746,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &619272360
 Transform:
@@ -2608,7 +2828,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &641818583
 Transform:
@@ -2885,7 +3105,7 @@ Transform:
   m_Children:
   - {fileID: 4527368225819680}
   - {fileID: 4354466690496596}
-  - {fileID: 170171481}
+  - {fileID: 202063127}
   - {fileID: 1458322689}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -2906,7 +3126,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &683760066
 Transform:
@@ -3070,7 +3290,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &724709756
 Transform:
@@ -3266,7 +3486,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &760877876
 Transform:
@@ -3362,6 +3582,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1168734183}
   - {fileID: 1711544745}
   - {fileID: 545259398}
   - {fileID: 328787051}
@@ -3475,7 +3696,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &903835646
 Transform:
@@ -3557,7 +3778,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &957522121
 Transform:
@@ -3639,7 +3860,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &964129540
 Transform:
@@ -3721,7 +3942,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &975058568
 Transform:
@@ -3803,7 +4024,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &988530497
 Transform:
@@ -3885,7 +4106,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1014416693
 Transform:
@@ -3967,7 +4188,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1022335948
 Transform:
@@ -4124,7 +4345,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1082439482
 Transform:
@@ -4331,70 +4552,140 @@ LODGroup:
     - renderer: {fileID: 1168876303}
     - renderer: {fileID: 525301529}
   m_Enabled: 1
---- !u!1 &1145444333
+--- !u!1 &1168734182
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1893501271177436, guid: b99944bf0f66a4643ac9a98799610529, type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1145444334}
-  - component: {fileID: 1145444335}
-  m_Layer: 0
-  m_Name: Reflection Probe Behind Frame
+  - component: {fileID: 1168734183}
+  - component: {fileID: 1168734186}
+  - component: {fileID: 1168734185}
+  - component: {fileID: 1168734184}
+  m_Layer: 5
+  m_Name: Next Scene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1145444334
-Transform:
+--- !u!224 &1168734183
+RectTransform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 4802510121164778, guid: b99944bf0f66a4643ac9a98799610529, type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1145444333}
+  m_GameObject: {fileID: 1168734182}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 1.49, z: -0.74}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 170171481}
-  m_RootOrder: 1
+  m_Children:
+  - {fileID: 157544273}
+  - {fileID: 141956228}
+  m_Father: {fileID: 785620486}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!215 &1145444335
-ReflectionProbe:
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1168734184
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 215423830422470646, guid: b99944bf0f66a4643ac9a98799610529, type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1145444333}
+  m_GameObject: {fileID: 1168734182}
   m_Enabled: 1
-  serializedVersion: 2
-  m_Type: 0
-  m_Mode: 0
-  m_RefreshMode: 0
-  m_TimeSlicingMode: 0
-  m_Resolution: 32
-  m_UpdateFrequency: 0
-  m_BoxSize: {x: 1.27, y: 2.5, z: 3.6474872}
-  m_BoxOffset: {x: 0.04511571, y: -0.3228073, z: -0.020675898}
-  m_NearClip: 0.3
-  m_FarClip: 1000
-  m_ShadowDistance: 100
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IntensityMultiplier: 1
-  m_BlendDistance: 1
-  m_HDR: 1
-  m_BoxProjection: 1
-  m_RenderDynamicObjects: 0
-  m_UseOcclusionCulling: 1
-  m_Importance: 1
-  m_CustomBakedTexture: {fileID: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1168734185}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 492915436}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ShootingScene
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1168734185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168734182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 100
+--- !u!222 &1168734186
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168734182}
+  m_CullTransparentMesh: 1
 --- !u!1 &1168876301
 GameObject:
   m_ObjectHideFlags: 0
@@ -4835,7 +5126,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1312014293
 Transform:
@@ -4917,7 +5208,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1324099963
 Transform:
@@ -5138,7 +5429,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1367485191
 Transform:
@@ -5253,7 +5544,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1382864450
 Transform:
@@ -5335,7 +5626,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1407592833
 Transform:
@@ -5417,7 +5708,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1433986414
 Transform:
@@ -5523,351 +5814,39 @@ LightProbeGroup:
   m_GameObject: {fileID: 1458322688}
   m_Enabled: 1
   m_SourcePositions:
-  - {x: 1.1668222, y: 0.16895413, z: 20.097366}
-  - {x: 1.126213, y: 0.16895413, z: 18.576668}
-  - {x: -2.9971218, y: 1.1217368, z: 20.428131}
-  - {x: -3.6825585, y: 0.16895413, z: 16.465187}
-  - {x: 0.16173074, y: 0.16895413, z: 18.552723}
-  - {x: -3.6465187, y: 0.8534832, z: 20.06496}
-  - {x: -3.6825585, y: 0.16895413, z: 17.419521}
-  - {x: -0.21390206, y: 0.16895413, z: 17.803146}
-  - {x: -0.18870503, y: 0.16895413, z: 17.419521}
-  - {x: -0.21390206, y: 0.16895413, z: 16.465187}
-  - {x: -2.4350986, y: 0.16895413, z: 17.419521}
-  - {x: -0.21390206, y: 0.16895413, z: 17.803146}
-  - {x: -0.21390206, y: 0.16895413, z: 21.308731}
-  - {x: -0.21390206, y: 0.16895413, z: 21.308731}
-  - {x: -0.21390206, y: 0.16895413, z: 21.308731}
-  - {x: -0.21390206, y: 0.16895413, z: 21.308731}
-  - {x: -0.21390206, y: 0.16895413, z: 21.308731}
-  - {x: -0.21390206, y: 0.16895413, z: 21.308731}
-  - {x: -0.21390206, y: 0.16895413, z: 21.308731}
-  - {x: -0.21390206, y: 0.16895413, z: 21.308731}
-  - {x: 1.1668222, y: 2.137173, z: 20.097366}
-  - {x: 1.1262125, y: 0.6519439, z: 19.705345}
-  - {x: -1.7083849, y: 2.137173, z: 21.308731}
-  - {x: -3.6825585, y: 2.137173, z: 16.465187}
-  - {x: 0.16173074, y: 0.6519439, z: 19.681396}
-  - {x: -3.6825585, y: 2.137173, z: 19.722038}
-  - {x: -3.6825585, y: 2.137173, z: 17.419521}
-  - {x: -0.21390206, y: 2.137173, z: 17.803146}
-  - {x: -0.18870503, y: 2.137173, z: 17.419521}
-  - {x: -0.21390206, y: 2.137173, z: 16.465187}
-  - {x: -2.626143, y: 2.137173, z: 20.13042}
-  - {x: -2.4350986, y: 2.137173, z: 17.419521}
-  - {x: -0.21390206, y: 2.137173, z: 17.803146}
-  - {x: -0.21390206, y: 2.137173, z: 21.308731}
-  - {x: -0.21390206, y: 2.137173, z: 21.308731}
-  - {x: -0.21390206, y: 2.137173, z: 21.308731}
-  - {x: -0.21390206, y: 2.137173, z: 21.308731}
-  - {x: -0.21390206, y: 2.137173, z: 21.308731}
-  - {x: -0.21390206, y: 2.137173, z: 21.308731}
-  - {x: -0.21390206, y: 2.137173, z: 21.308731}
-  - {x: -0.21390206, y: 2.137173, z: 21.308731}
-  - {x: 1.126213, y: 0.16895413, z: 18.576668}
-  - {x: 1.1262125, y: 0.6519439, z: 19.705345}
-  - {x: 1.126213, y: 0.16895413, z: 16.465187}
-  - {x: 1.126213, y: 2.137173, z: 16.465187}
-  - {x: 1.126213, y: 0.16895413, z: 16.465187}
-  - {x: 1.126213, y: 2.137173, z: 16.465187}
-  - {x: -2.4350986, y: 0.16895413, z: 17.803146}
-  - {x: -2.4350986, y: 2.137173, z: 17.803146}
-  - {x: 0.17508814, y: 0.16895413, z: 19.689758}
-  - {x: 0.17508814, y: 2.137173, z: 19.689758}
-  - {x: -3.6825585, y: 0.16895413, z: 17.803146}
-  - {x: -3.6825585, y: 2.137173, z: 17.803146}
-  - {x: -0.8844851, y: 0.16895413, z: 20.099743}
-  - {x: -0.8844851, y: 2.137173, z: 20.099743}
-  - {x: -1.5760025, y: 0.16895413, z: 19.689758}
-  - {x: -1.5760025, y: 2.137173, z: 19.689758}
-  - {x: -3.4161825, y: 0.8719945, z: 20.73925}
-  - {x: -3.6825585, y: 2.137173, z: 21.308731}
-  - {x: -3.006393, y: 0.16895413, z: 20.597527}
-  - {x: -2.7362256, y: 0.56283283, z: 20.753895}
-  - {x: -3.6825585, y: 0.16895413, z: 21.308731}
-  - {x: -1.7083849, y: 0.16895413, z: 21.308731}
-  - {x: -2.5459852, y: 0.16895413, z: 20.943825}
-  - {x: -3.1946888, y: 0.51661086, z: 20.500523}
-  - {x: -3.6825585, y: 0.16895413, z: 19.722038}
-  - {x: 1.1668222, y: 0.16895413, z: 21.308731}
-  - {x: 1.1668222, y: 2.137173, z: 21.308731}
-  - {x: 0.16173074, y: 0.16895413, z: 17.76955}
-  - {x: 1.126213, y: 0.16895413, z: 17.793499}
-  - {x: 1.126213, y: 0.16895413, z: 17.793499}
-  - {x: 1.126213, y: 2.137173, z: 17.793499}
-  - {x: 1.126213, y: 2.137173, z: 17.793499}
-  - {x: 0.16173074, y: 2.137173, z: 17.76955}
-  - {x: 1.126213, y: 2.137173, z: 18.576668}
-  - {x: 0.16173074, y: 2.137173, z: 18.552723}
-  - {x: 1.126213, y: 2.137173, z: 18.576668}
-  - {x: 1.126213, y: 0.6519439, z: 18.576668}
-  - {x: 0.16173074, y: 0.6519439, z: 18.552723}
-  - {x: 1.126213, y: 0.6519439, z: 18.576668}
-  - {x: 1.126213, y: 0.6519439, z: 19.066902}
-  - {x: 0.16173074, y: 0.6519439, z: 19.042957}
-  - {x: -3.6825585, y: 2.137173, z: 19.0836}
-  - {x: 1.126213, y: 0.6519439, z: 19.066902}
-  - {x: 0.17508814, y: 0.16895413, z: 19.05132}
-  - {x: 0.17508814, y: 2.137173, z: 19.05132}
-  - {x: -1.5760022, y: 0.16895413, z: 19.05132}
-  - {x: -1.5760022, y: 2.137173, z: 19.05132}
-  - {x: -3.6825585, y: 0.16895413, z: 19.0836}
-  - {x: 1.1262125, y: 1.0357099, z: 19.705345}
-  - {x: 0.16173074, y: 1.0357099, z: 19.681396}
-  - {x: 1.1262125, y: 1.0357099, z: 19.705345}
-  - {x: 1.126213, y: 1.0357099, z: 18.576668}
-  - {x: 0.16173074, y: 1.0357099, z: 18.552723}
-  - {x: 1.126213, y: 1.0357099, z: 18.576668}
-  - {x: 1.126213, y: 1.0357099, z: 19.066902}
-  - {x: 0.16173074, y: 1.0357099, z: 19.042957}
-  - {x: 1.126213, y: 1.0357099, z: 19.066902}
-  - {x: 1.1262125, y: 1.6615444, z: 19.705345}
-  - {x: 0.16173074, y: 1.6615444, z: 19.681396}
-  - {x: 1.1262125, y: 1.6615444, z: 19.705345}
-  - {x: 1.126213, y: 1.6615444, z: 18.576668}
-  - {x: 0.16173074, y: 1.6615444, z: 18.552723}
-  - {x: 1.126213, y: 1.6615444, z: 18.576668}
-  - {x: 1.126213, y: 1.6615444, z: 19.066902}
-  - {x: 0.16173074, y: 1.6615444, z: 19.042957}
-  - {x: 1.126213, y: 1.6615444, z: 19.066902}
-  - {x: -3.410048, y: 0.63955027, z: 20.201618}
-  - {x: -2.6251917, y: 0.51661086, z: 20.015358}
-  - {x: -2.8125267, y: 0.51661086, z: 20.21035}
-  - {x: -3.319726, y: 0.51661086, z: 20.612267}
-  - {x: 1.1668255, y: 0.16895413, z: 14.366145}
-  - {x: 1.1262163, y: 0.16895413, z: 12.845445}
-  - {x: -2.9971247, y: 1.1217368, z: 14.696912}
-  - {x: -3.6825614, y: 0.16895413, z: 10.733966}
-  - {x: 0.16173407, y: 0.16895413, z: 12.821497}
-  - {x: -3.6465216, y: 0.8534832, z: 14.333739}
-  - {x: -3.6825614, y: 0.16895413, z: 11.688296}
-  - {x: -0.21390492, y: 0.16895413, z: 12.071921}
-  - {x: -0.18870789, y: 0.16895413, z: 11.688296}
-  - {x: -0.21390492, y: 0.16895413, z: 10.733966}
-  - {x: -2.4351015, y: 0.16895413, z: 11.688296}
-  - {x: -0.21390492, y: 0.16895413, z: 12.071921}
-  - {x: -0.21390492, y: 0.16895413, z: 15.57751}
-  - {x: -0.21390492, y: 0.16895413, z: 15.57751}
-  - {x: -0.21390492, y: 0.16895413, z: 15.57751}
-  - {x: -0.21390492, y: 0.16895413, z: 15.57751}
-  - {x: -0.21390492, y: 0.16895413, z: 15.57751}
-  - {x: -0.21390492, y: 0.16895413, z: 15.57751}
-  - {x: -0.21390492, y: 0.16895413, z: 15.57751}
-  - {x: -0.21390492, y: 0.16895413, z: 15.57751}
-  - {x: 1.1668255, y: 2.137173, z: 14.366145}
-  - {x: 1.1262158, y: 0.6519439, z: 13.97412}
-  - {x: -1.7083877, y: 2.137173, z: 15.57751}
-  - {x: -3.6825614, y: 2.137173, z: 10.733966}
-  - {x: 0.16173407, y: 0.6519439, z: 13.950173}
-  - {x: -3.6825614, y: 2.137173, z: 13.990816}
-  - {x: -3.6825614, y: 2.137173, z: 11.688296}
-  - {x: -0.21390492, y: 2.137173, z: 12.071921}
-  - {x: -0.18870789, y: 2.137173, z: 11.688296}
-  - {x: -0.21390492, y: 2.137173, z: 10.733966}
-  - {x: -2.6261458, y: 2.137173, z: 14.399203}
-  - {x: -2.4351015, y: 2.137173, z: 11.688296}
-  - {x: -0.21390492, y: 2.137173, z: 12.071921}
-  - {x: -0.21390492, y: 2.137173, z: 15.57751}
-  - {x: -0.21390492, y: 2.137173, z: 15.57751}
-  - {x: -0.21390492, y: 2.137173, z: 15.57751}
-  - {x: -0.21390492, y: 2.137173, z: 15.57751}
-  - {x: -0.21390492, y: 2.137173, z: 15.57751}
-  - {x: -0.21390492, y: 2.137173, z: 15.57751}
-  - {x: -0.21390492, y: 2.137173, z: 15.57751}
-  - {x: -0.21390492, y: 2.137173, z: 15.57751}
-  - {x: 1.1262163, y: 0.16895413, z: 12.845445}
-  - {x: 1.1262158, y: 0.6519439, z: 13.97412}
-  - {x: 1.1262163, y: 0.16895413, z: 10.733966}
-  - {x: 1.1262163, y: 2.137173, z: 10.733966}
-  - {x: 1.1262163, y: 0.16895413, z: 10.733966}
-  - {x: 1.1262163, y: 2.137173, z: 10.733966}
-  - {x: -2.4351015, y: 0.16895413, z: 12.071921}
-  - {x: -2.4351015, y: 2.137173, z: 12.071921}
-  - {x: 0.17509148, y: 0.16895413, z: 13.958535}
-  - {x: 0.17509148, y: 2.137173, z: 13.958535}
-  - {x: -3.6825614, y: 0.16895413, z: 12.071921}
-  - {x: -3.6825614, y: 2.137173, z: 12.071921}
-  - {x: -0.884488, y: 0.16895413, z: 14.368522}
-  - {x: -0.884488, y: 2.137173, z: 14.368522}
-  - {x: -1.5760053, y: 0.16895413, z: 13.958535}
-  - {x: -1.5760053, y: 2.137173, z: 13.958535}
-  - {x: -3.4161854, y: 0.8719945, z: 15.008029}
-  - {x: -3.6825614, y: 2.137173, z: 15.57751}
-  - {x: -3.0063958, y: 0.16895413, z: 14.866307}
-  - {x: -2.7362285, y: 0.56283283, z: 15.0226755}
-  - {x: -3.6825614, y: 0.16895413, z: 15.57751}
-  - {x: -1.7083877, y: 0.16895413, z: 15.57751}
-  - {x: -2.545988, y: 0.16895413, z: 15.212604}
-  - {x: -3.1946917, y: 0.51661086, z: 14.7692995}
-  - {x: -3.6825614, y: 0.16895413, z: 13.990816}
-  - {x: 1.1668255, y: 0.16895413, z: 15.57751}
-  - {x: 1.1668255, y: 2.137173, z: 15.57751}
-  - {x: 0.16173407, y: 0.16895413, z: 12.038325}
-  - {x: 1.1262163, y: 0.16895413, z: 12.062273}
-  - {x: 1.1262163, y: 0.16895413, z: 12.062273}
-  - {x: 1.1262163, y: 2.137173, z: 12.062273}
-  - {x: 1.1262163, y: 2.137173, z: 12.062273}
-  - {x: 0.16173407, y: 2.137173, z: 12.038325}
-  - {x: 1.1262163, y: 2.137173, z: 12.845445}
-  - {x: 0.16173407, y: 2.137173, z: 12.821497}
-  - {x: 1.1262163, y: 2.137173, z: 12.845445}
-  - {x: 1.1262163, y: 0.6519439, z: 12.845445}
-  - {x: 0.16173407, y: 0.6519439, z: 12.821497}
-  - {x: 1.1262163, y: 0.6519439, z: 12.845445}
-  - {x: 1.1262163, y: 0.6519439, z: 13.335678}
-  - {x: 0.16173407, y: 0.6519439, z: 13.31173}
-  - {x: -3.6825614, y: 2.137173, z: 13.352373}
-  - {x: 1.1262163, y: 0.6519439, z: 13.335678}
-  - {x: 0.17509148, y: 0.16895413, z: 13.320093}
-  - {x: 0.17509148, y: 2.137173, z: 13.320093}
-  - {x: -1.5760051, y: 0.16895413, z: 13.320093}
-  - {x: -1.5760051, y: 2.137173, z: 13.320093}
-  - {x: -3.6825614, y: 0.16895413, z: 13.352373}
-  - {x: 1.1262158, y: 1.0357099, z: 13.97412}
-  - {x: 0.16173407, y: 1.0357099, z: 13.950173}
-  - {x: 1.1262158, y: 1.0357099, z: 13.97412}
-  - {x: 1.1262163, y: 1.0357099, z: 12.845445}
-  - {x: 0.16173407, y: 1.0357099, z: 12.821497}
-  - {x: 1.1262163, y: 1.0357099, z: 12.845445}
-  - {x: 1.1262163, y: 1.0357099, z: 13.335678}
-  - {x: 0.16173407, y: 1.0357099, z: 13.31173}
-  - {x: 1.1262163, y: 1.0357099, z: 13.335678}
-  - {x: 1.1262158, y: 1.6615444, z: 13.97412}
-  - {x: 0.16173407, y: 1.6615444, z: 13.950173}
-  - {x: 1.1262158, y: 1.6615444, z: 13.97412}
-  - {x: 1.1262163, y: 1.6615444, z: 12.845445}
-  - {x: 0.16173407, y: 1.6615444, z: 12.821497}
-  - {x: 1.1262163, y: 1.6615444, z: 12.845445}
-  - {x: 1.1262163, y: 1.6615444, z: 13.335678}
-  - {x: 0.16173407, y: 1.6615444, z: 13.31173}
-  - {x: 1.1262163, y: 1.6615444, z: 13.335678}
-  - {x: -3.4100509, y: 0.63955027, z: 14.470397}
-  - {x: -2.6251945, y: 0.51661086, z: 14.284137}
-  - {x: -2.8125296, y: 0.51661086, z: 14.479131}
-  - {x: -3.3197289, y: 0.51661086, z: 14.881047}
-  - {x: 1.1668222, y: 0.16895413, z: 8.224792}
-  - {x: 1.126213, y: 0.16895413, z: 6.7040954}
-  - {x: -2.9971232, y: 1.1217368, z: 8.555558}
   - {x: -3.6825604, y: 0.16895413, z: 4.592617}
-  - {x: 0.16173074, y: 0.16895413, z: 6.6801486}
-  - {x: -3.6465206, y: 0.8534832, z: 8.192386}
   - {x: -3.6825604, y: 0.16895413, z: 5.546947}
   - {x: -0.21390396, y: 0.16895413, z: 5.9305725}
   - {x: -0.18870693, y: 0.16895413, z: 5.546947}
   - {x: -0.21390396, y: 0.16895413, z: 4.592617}
   - {x: -2.4351006, y: 0.16895413, z: 5.546947}
   - {x: -0.21390396, y: 0.16895413, z: 5.9305725}
-  - {x: -0.21390396, y: 0.16895413, z: 9.436156}
-  - {x: -0.21390396, y: 0.16895413, z: 9.436156}
-  - {x: -0.21390396, y: 0.16895413, z: 9.436156}
-  - {x: -0.21390396, y: 0.16895413, z: 9.436156}
-  - {x: -0.21390396, y: 0.16895413, z: 9.436156}
-  - {x: -0.21390396, y: 0.16895413, z: 9.436156}
-  - {x: -0.21390396, y: 0.16895413, z: 9.436156}
-  - {x: -0.21390396, y: 0.16895413, z: 9.436156}
-  - {x: 1.1668222, y: 2.137173, z: 8.224792}
-  - {x: 1.1262125, y: 0.6519439, z: 7.8327694}
-  - {x: -1.7083868, y: 2.137173, z: 9.436156}
   - {x: -3.6825604, y: 2.137173, z: 4.592617}
-  - {x: 0.16173074, y: 0.6519439, z: 7.8088207}
-  - {x: -3.6825604, y: 2.137173, z: 7.8494644}
   - {x: -3.6825604, y: 2.137173, z: 5.546947}
   - {x: -0.21390396, y: 2.137173, z: 5.9305725}
   - {x: -0.18870693, y: 2.137173, z: 5.546947}
   - {x: -0.21390396, y: 2.137173, z: 4.592617}
-  - {x: -2.626145, y: 2.137173, z: 8.257848}
   - {x: -2.4351006, y: 2.137173, z: 5.546947}
   - {x: -0.21390396, y: 2.137173, z: 5.9305725}
-  - {x: -0.21390396, y: 2.137173, z: 9.436156}
-  - {x: -0.21390396, y: 2.137173, z: 9.436156}
-  - {x: -0.21390396, y: 2.137173, z: 9.436156}
-  - {x: -0.21390396, y: 2.137173, z: 9.436156}
-  - {x: -0.21390396, y: 2.137173, z: 9.436156}
-  - {x: -0.21390396, y: 2.137173, z: 9.436156}
-  - {x: -0.21390396, y: 2.137173, z: 9.436156}
-  - {x: -0.21390396, y: 2.137173, z: 9.436156}
-  - {x: 1.126213, y: 0.16895413, z: 6.7040954}
-  - {x: 1.1262125, y: 0.6519439, z: 7.8327694}
   - {x: 1.126213, y: 0.16895413, z: 4.592617}
   - {x: 1.126213, y: 2.137173, z: 4.592617}
   - {x: 1.126213, y: 0.16895413, z: 4.592617}
   - {x: 1.126213, y: 2.137173, z: 4.592617}
   - {x: -2.4351006, y: 0.16895413, z: 5.9305725}
   - {x: -2.4351006, y: 2.137173, z: 5.9305725}
-  - {x: 0.17508814, y: 0.16895413, z: 7.8171825}
-  - {x: 0.17508814, y: 2.137173, z: 7.8171825}
   - {x: -3.6825604, y: 0.16895413, z: 5.9305725}
   - {x: -3.6825604, y: 2.137173, z: 5.9305725}
-  - {x: -0.8844868, y: 0.16895413, z: 8.227168}
-  - {x: -0.8844868, y: 2.137173, z: 8.227168}
-  - {x: -1.5760041, y: 0.16895413, z: 7.8171825}
-  - {x: -1.5760041, y: 2.137173, z: 7.8171825}
-  - {x: -3.4161844, y: 0.8719945, z: 8.866677}
-  - {x: -3.6825604, y: 2.137173, z: 9.436156}
-  - {x: -3.0063949, y: 0.16895413, z: 8.724954}
-  - {x: -2.7362275, y: 0.56283283, z: 8.881322}
-  - {x: -3.6825604, y: 0.16895413, z: 9.436156}
-  - {x: -1.7083868, y: 0.16895413, z: 9.436156}
-  - {x: -2.5459871, y: 0.16895413, z: 9.07125}
-  - {x: -3.1946907, y: 0.51661086, z: 8.627948}
-  - {x: -3.6825604, y: 0.16895413, z: 7.8494644}
-  - {x: 1.1668222, y: 0.16895413, z: 9.436156}
-  - {x: 1.1668222, y: 2.137173, z: 9.436156}
   - {x: 0.16173074, y: 0.16895413, z: 5.8969765}
   - {x: 1.126213, y: 0.16895413, z: 5.9209237}
   - {x: 1.126213, y: 0.16895413, z: 5.9209237}
   - {x: 1.126213, y: 2.137173, z: 5.9209237}
   - {x: 1.126213, y: 2.137173, z: 5.9209237}
   - {x: 0.16173074, y: 2.137173, z: 5.8969765}
-  - {x: 1.126213, y: 2.137173, z: 6.7040954}
-  - {x: 0.16173074, y: 2.137173, z: 6.6801486}
-  - {x: 1.126213, y: 2.137173, z: 6.7040954}
-  - {x: 1.126213, y: 0.6519439, z: 6.7040954}
-  - {x: 0.16173074, y: 0.6519439, z: 6.6801486}
-  - {x: 1.126213, y: 0.6519439, z: 6.7040954}
-  - {x: 1.126213, y: 0.6519439, z: 7.194329}
-  - {x: 0.16173074, y: 0.6519439, z: 7.1703815}
-  - {x: -3.6825604, y: 2.137173, z: 7.2110243}
-  - {x: 1.126213, y: 0.6519439, z: 7.194329}
-  - {x: 0.17508814, y: 0.16895413, z: 7.178744}
-  - {x: 0.17508814, y: 2.137173, z: 7.178744}
-  - {x: -1.5760041, y: 0.16895413, z: 7.178744}
-  - {x: -1.5760041, y: 2.137173, z: 7.178744}
-  - {x: -3.6825604, y: 0.16895413, z: 7.2110243}
-  - {x: 1.1262125, y: 1.0357099, z: 7.8327694}
-  - {x: 0.16173074, y: 1.0357099, z: 7.8088207}
-  - {x: 1.1262125, y: 1.0357099, z: 7.8327694}
-  - {x: 1.126213, y: 1.0357099, z: 6.7040954}
-  - {x: 0.16173074, y: 1.0357099, z: 6.6801486}
-  - {x: 1.126213, y: 1.0357099, z: 6.7040954}
-  - {x: 1.126213, y: 1.0357099, z: 7.194329}
-  - {x: 0.16173074, y: 1.0357099, z: 7.1703815}
-  - {x: 1.126213, y: 1.0357099, z: 7.194329}
-  - {x: 1.1262125, y: 1.6615444, z: 7.8327694}
-  - {x: 0.16173074, y: 1.6615444, z: 7.8088207}
-  - {x: 1.1262125, y: 1.6615444, z: 7.8327694}
-  - {x: 1.126213, y: 1.6615444, z: 6.7040954}
-  - {x: 0.16173074, y: 1.6615444, z: 6.6801486}
-  - {x: 1.126213, y: 1.6615444, z: 6.7040954}
-  - {x: 1.126213, y: 1.6615444, z: 7.194329}
-  - {x: 0.16173074, y: 1.6615444, z: 7.1703815}
-  - {x: 1.126213, y: 1.6615444, z: 7.194329}
-  - {x: -3.4100494, y: 0.63955027, z: 8.329043}
-  - {x: -2.625193, y: 0.51661086, z: 8.142783}
-  - {x: -2.8125286, y: 0.51661086, z: 8.337777}
-  - {x: -3.319728, y: 0.51661086, z: 8.739694}
   - {x: 1.1668255, y: 0.16895413, z: 2.4935758}
   - {x: 1.1262163, y: 0.16895413, z: 0.97287524}
   - {x: -2.997126, y: 1.1217368, z: 2.8243425}
-  - {x: -3.6825633, y: 0.16895413, z: -1.1386034}
   - {x: 0.16173407, y: 0.16895413, z: 0.948928}
   - {x: -3.6465235, y: 0.8534832, z: 2.4611707}
-  - {x: -3.6825633, y: 0.16895413, z: -0.18427354}
-  - {x: -0.21390682, y: 0.16895413, z: 0.19935197}
-  - {x: -0.1887098, y: 0.16895413, z: -0.18427354}
-  - {x: -0.21390682, y: 0.16895413, z: -1.1386034}
-  - {x: -2.4351034, y: 0.16895413, z: -0.18427342}
-  - {x: -0.21390682, y: 0.16895413, z: 0.19935197}
   - {x: -0.21390682, y: 0.16895413, z: 3.7049394}
   - {x: -0.21390682, y: 0.16895413, z: 3.7049394}
   - {x: -0.21390682, y: 0.16895413, z: 3.7049394}
@@ -5879,16 +5858,9 @@ LightProbeGroup:
   - {x: 1.1668255, y: 2.137173, z: 2.4935758}
   - {x: 1.1262158, y: 0.6519439, z: 2.1015508}
   - {x: -1.7083896, y: 2.137173, z: 3.7049394}
-  - {x: -3.6825633, y: 2.137173, z: -1.1386034}
   - {x: 0.16173407, y: 0.6519439, z: 2.0776036}
   - {x: -3.6825633, y: 2.137173, z: 2.1182463}
-  - {x: -3.6825633, y: 2.137173, z: -0.18427354}
-  - {x: -0.21390682, y: 2.137173, z: 0.19935197}
-  - {x: -0.1887098, y: 2.137173, z: -0.18427354}
-  - {x: -0.21390682, y: 2.137173, z: -1.1386034}
   - {x: -2.6261477, y: 2.137173, z: 2.5266328}
-  - {x: -2.4351034, y: 2.137173, z: -0.18427342}
-  - {x: -0.21390682, y: 2.137173, z: 0.19935197}
   - {x: -0.21390682, y: 2.137173, z: 3.7049394}
   - {x: -0.21390682, y: 2.137173, z: 3.7049394}
   - {x: -0.21390682, y: 2.137173, z: 3.7049394}
@@ -5899,16 +5871,8 @@ LightProbeGroup:
   - {x: -0.21390682, y: 2.137173, z: 3.7049394}
   - {x: 1.1262163, y: 0.16895413, z: 0.97287524}
   - {x: 1.1262158, y: 0.6519439, z: 2.1015508}
-  - {x: 1.1262163, y: 0.16895413, z: -1.1386034}
-  - {x: 1.1262163, y: 2.137173, z: -1.1386034}
-  - {x: 1.1262163, y: 0.16895413, z: -1.1386034}
-  - {x: 1.1262163, y: 2.137173, z: -1.1386034}
-  - {x: -2.4351034, y: 0.16895413, z: 0.19935209}
-  - {x: -2.4351034, y: 2.137173, z: 0.19935209}
   - {x: 0.17509148, y: 0.16895413, z: 2.0859656}
   - {x: 0.17509148, y: 2.137173, z: 2.0859656}
-  - {x: -3.6825633, y: 0.16895413, z: 0.19935197}
-  - {x: -3.6825633, y: 2.137173, z: 0.19935197}
   - {x: -0.88448966, y: 0.16895413, z: 2.495953}
   - {x: -0.88448966, y: 2.137173, z: 2.495953}
   - {x: -1.576007, y: 0.16895413, z: 2.0859656}
@@ -5924,12 +5888,8 @@ LightProbeGroup:
   - {x: -3.6825633, y: 0.16895413, z: 2.1182463}
   - {x: 1.1668255, y: 0.16895413, z: 3.7049394}
   - {x: 1.1668255, y: 2.137173, z: 3.7049394}
-  - {x: 0.16173407, y: 0.16895413, z: 0.16575593}
-  - {x: 1.1262163, y: 0.16895413, z: 0.18970323}
-  - {x: 1.1262163, y: 0.16895413, z: 0.18970323}
   - {x: 1.1262163, y: 2.137173, z: 0.18970323}
   - {x: 1.1262163, y: 2.137173, z: 0.18970323}
-  - {x: 0.16173407, y: 2.137173, z: 0.16575593}
   - {x: 1.1262163, y: 2.137173, z: 0.97287524}
   - {x: 0.16173407, y: 2.137173, z: 0.948928}
   - {x: 1.1262163, y: 2.137173, z: 0.97287524}
@@ -5938,13 +5898,13 @@ LightProbeGroup:
   - {x: 1.1262163, y: 0.6519439, z: 0.97287524}
   - {x: 1.1262163, y: 0.6519439, z: 1.4631083}
   - {x: 0.16173407, y: 0.6519439, z: 1.4391611}
-  - {x: -3.6825633, y: 2.137173, z: 1.4798038}
+  - {x: -3.6825633, y: 2.137173, z: 0.3622542}
   - {x: 1.1262163, y: 0.6519439, z: 1.4631083}
   - {x: 0.17509148, y: 0.16895413, z: 1.4475231}
   - {x: 0.17509148, y: 2.137173, z: 1.4475231}
   - {x: -1.576007, y: 0.16895413, z: 1.4475231}
   - {x: -1.576007, y: 2.137173, z: 1.4475231}
-  - {x: -3.6825633, y: 0.16895413, z: 1.4798038}
+  - {x: -3.6825633, y: 0.16895413, z: -0.13141473}
   - {x: 1.1262158, y: 1.0357099, z: 2.1015508}
   - {x: 0.16173407, y: 1.0357099, z: 2.0776036}
   - {x: 1.1262158, y: 1.0357099, z: 2.1015508}
@@ -6149,7 +6109,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1494471464
 Transform:
@@ -6554,7 +6514,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1622872485
 Transform:
@@ -6702,7 +6662,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1642603357
 Transform:
@@ -6785,7 +6745,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1655431729
 Transform:
@@ -7041,7 +7001,7 @@ RectTransform:
   - {fileID: 1200734791}
   - {fileID: 645900104}
   m_Father: {fileID: 785620486}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7224,7 +7184,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1731244062
 Transform:
@@ -7306,7 +7266,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1743059451
 Transform:
@@ -7388,7 +7348,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1746711557
 Transform:
@@ -7471,7 +7431,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1756226365
 Transform:
@@ -7553,7 +7513,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1773240672
 Transform:
@@ -7635,7 +7595,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1849334860
 Transform:
@@ -7717,7 +7677,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1851179168
 Transform:
@@ -7880,7 +7840,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1900381703
 Transform:
@@ -8120,7 +8080,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1957283782
 Transform:
@@ -8203,7 +8163,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1959641022
 Transform:
@@ -8285,7 +8245,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1974193624
 Transform:
@@ -8449,7 +8409,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1987728893
 Transform:
@@ -8724,7 +8684,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2059583749
 Transform:
@@ -8982,7 +8942,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2092454015
 Transform:
@@ -9062,7 +9022,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1083473080716828
 GameObject:
@@ -9115,7 +9075,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1346729979704714
 GameObject:
@@ -9482,7 +9442,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4033772833009650
 Transform:
