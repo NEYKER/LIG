@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3503e77a30e2b9a43a6b1ea8a1a2c07a, type: 3}
+  m_Name: GravitonWeapon
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 7565814282952072821, guid: e52e465cd12c3654ea14a8874f76bce8, type: 3}
+  shootingCadence: 1
+  reloadTime: 5
+  pushForce: 3
+  bulletsPerMagazine: 1

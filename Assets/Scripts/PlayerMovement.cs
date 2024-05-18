@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         rigidBody = GetComponent<Rigidbody>();
+        rigidBody.freezeRotation = true;
     }
 
     void FixedUpdate()
