@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; set; }
+    public bool Pause { get; set; }
 
     void Awake()
     {
@@ -16,8 +17,13 @@ public class GameManager : MonoBehaviour
             Instance = this;
         }
 
-
+        Application.targetFrameRate = 60;
         DontDestroyOnLoad(this);
+    }
+
+    public void LoadShootingScene()
+    {
+        LoadScene("ShootingScene");
     }
 
     public void LoadScene(string sceneName)

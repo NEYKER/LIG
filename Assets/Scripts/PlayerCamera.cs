@@ -2,29 +2,29 @@ using UnityEngine;
 
 public class PlayerCamera : MonoBehaviour
 {
-    [SerializeField] private float xSensitivity;
-    [SerializeField] private float ySensitivity;
-    [SerializeField] private float xRotation;
-    [SerializeField] private float yRotation;
-    [SerializeField] private Transform Player;
+    [SerializeField] float mouseSensitivity;
+    [SerializeField] Transform playerBody;
 
-    private void Start()
+    float xRotation;
+
+    void Update()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        if (GameManager.Instance.Pause)
+        {
+            return;
+        }
+        Rotate();
     }
 
-    private void Update()
+    void Rotate()
     {
-        float xAxis = Input.GetAxisRaw("Mouse X") * Time.deltaTime * xSensitivity;      
-        float yAxis = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * ySensitivity;
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
-        xRotation -= yAxis;
-        yRotation += xAxis;
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        xRotation = Mathf.Clamp(xRotation, -90, 90);
-
-        transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
-        Player.rotation = Quaternion.Euler(0, yRotation, 0);
+        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        playerBody.Rotate(Vector3.up * mouseX);
     }
 }

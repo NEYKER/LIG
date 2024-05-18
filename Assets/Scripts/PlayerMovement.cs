@@ -2,95 +2,54 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float movementSpeed;
-    [SerializeField] float jumpForce;
-    [SerializeField] float jumpCooldown;
-    [SerializeField] float airMultiplier;
-    [SerializeField] float dragForce;
-    [SerializeField] float playerHeight;
-    [SerializeField] LayerMask floorLayer;
+    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float jumpForce = 5f;
+    bool isInAJumpableSurface;
 
-    bool isOnFloor;
-    bool canJump;
-    Rigidbody playerRigidbody;
-    float horizontalInput;
-    float verticalInput;
-    Vector3 direction;
+    Rigidbody rigidBody;
 
     void Awake()
     {
-        playerRigidbody = GetComponent<Rigidbody>();
-        playerRigidbody.freezeRotation = true;
-    }
-
-    void Start()
-    {
-        ResetJump();
-    }
-
-    void Update()
-    {
-        CheckIfOnGround();
-        
-        if (Input.GetKey(KeyCode.Space) && isOnFloor && canJump)
-        {
-            canJump = false;
-            Jump();
-            Invoke(nameof(ResetJump), jumpCooldown);
-        }
-            
-        SpeedControl();
+        rigidBody = GetComponent<Rigidbody>();
     }
 
     void FixedUpdate()
     {
+        if (GameManager.Instance.Pause)
+        {
+            return;
+        }
         Move();
-    }
-
-    void SetInputs()
-    {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
-    }
-
-    void ResetJump()
-    {
-        canJump = true;
+        Jump();
     }
 
     void Move()
     {
-        SetInputs();
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
 
-        direction = transform.forward * verticalInput + transform.right * horizontalInput;
+        Vector3 direction = transform.right * moveHorizontal + transform.forward * moveVertical;
+        Vector3 velocity = direction * moveSpeed;
 
-        if(isOnFloor) playerRigidbody.AddForce(direction.normalized * 10 * movementSpeed, ForceMode.Force);
-        else if (!isOnFloor) playerRigidbody.AddForce(direction.normalized * 10 * movementSpeed * airMultiplier, ForceMode.Force);
+        velocity.y = rigidBody.velocity.y;
+        rigidBody.velocity = velocity;
     }
 
     void Jump()
     {
-        playerRigidbody.velocity = new Vector3(playerRigidbody.velocity.x, 0, playerRigidbody.velocity.z);
-
-        playerRigidbody.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+        if (isInAJumpableSurface && Input.GetButtonDown("Jump")) 
+            rigidBody.velocity = new Vector3(rigidBody.velocity.x, jumpForce, rigidBody.velocity.z);
     }
 
-    void SpeedControl()
+    void OnCollisionStay(Collision collision)
     {
-        Vector3 velocity = new Vector3(playerRigidbody.velocity.x, 0, playerRigidbody.velocity.z);
-
-        if(velocity.magnitude > movementSpeed)
-        {
-            Vector3 limitedVelocity = velocity.normalized * movementSpeed;
-            playerRigidbody.velocity = new Vector3(limitedVelocity.x, playerRigidbody.velocity.y, limitedVelocity.z);
-        }
+        if (collision.gameObject.CompareTag("JumpableSurface"))
+            isInAJumpableSurface = true;
     }
 
-    void CheckIfOnGround()
+    void OnCollisionExit(Collision collision)
     {
-        isOnFloor = Physics.Raycast(transform.position + new Vector3(0, 0.05f, 0), Vector3.down, playerHeight * 0.5f + 0.3f, floorLayer);
-
-        if (isOnFloor) playerRigidbody.drag = dragForce;
-        else playerRigidbody.drag = 0;
+        if (collision.gameObject.CompareTag("JumpableSurface"))
+            isInAJumpableSurface = false;
     }
 }

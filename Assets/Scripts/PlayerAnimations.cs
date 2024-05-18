@@ -1,14 +1,15 @@
+using System;
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
 public class PlayerAnimations : MonoBehaviour
 {
-    Animator animator;
+    [SerializeField] Animator animator;
 
     readonly string houseDancing = "houseDancing";
     readonly string waveHipHopDance = "waveHipHopDance";
     readonly string macarenaDance = "macarenaDance";
     readonly string stopAnimations = "stopAnimations";
+    readonly string playerPrefCurrentAnimation = "PlayerCurrentAnimation";
 
     public static PlayerAnimations Instance { get; set; }
 
@@ -23,34 +24,54 @@ public class PlayerAnimations : MonoBehaviour
             Instance = this;
         }
 
-        animator = GetComponent<Animator>();    
+        LoadCurrentAnimation();
+    }
+
+    void LoadCurrentAnimation()
+    {
+        if (string.IsNullOrEmpty(PlayerPrefs.GetString(playerPrefCurrentAnimation)))
+        {
+            return;
+        }
+
+        SetAnimationByAnimatorParameter(PlayerPrefs.GetString(playerPrefCurrentAnimation));
+    }
+
+    void SetAnimationByAnimatorParameter(string animationParameter)
+    {
+        StartAnimation();
+        SaveCurrentAnimation(houseDancing);
+        animator.SetBool(animationParameter, true);
     }
 
     public void SetActiveHouseDancing(bool activeAnimation)
     {
         StartAnimation();
+        SaveCurrentAnimation(houseDancing);
         animator.SetBool(houseDancing, activeAnimation);
     }
 
     public void SetActiveWaveHipHopDance(bool activeAnimation)
     {
         StartAnimation();
+        SaveCurrentAnimation(waveHipHopDance);
         animator.SetBool(waveHipHopDance, activeAnimation);
     }
 
     public void SetActiveMacarenaDance(bool activeAnimation)
     {
         StartAnimation();
+        SaveCurrentAnimation(macarenaDance);
         animator.SetBool(macarenaDance, activeAnimation);
-    }
-
-    public void StopDancing()
-    {
-        animator.SetBool(stopAnimations, true);
     }
 
     void StartAnimation()
     {
         animator.SetBool(stopAnimations, false);
+    }
+
+    void SaveCurrentAnimation(string animationParameter)
+    {
+        PlayerPrefs.SetString(playerPrefCurrentAnimation, animationParameter);
     }
 }

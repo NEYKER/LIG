@@ -1,39 +1,35 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DancingAnimationView : MonoBehaviour
 {
-    [SerializeField] Toggle stopDancingButton;
-    [SerializeField] Toggle houseDancingButton;
-    [SerializeField] Toggle macarenaDanceButton;
-    [SerializeField] Toggle waveHipHopDanceButton;
+    [SerializeField] Toggle houseDancingToggle;
+    [SerializeField] Toggle macarenaDanceToggle;
+    [SerializeField] Toggle waveHipHopDanceToggle;
+    [SerializeField] Button startSelectedAnimationButton;
 
-    void Awake()
+    void Start()
     {
-        stopDancingButton.onValueChanged.AddListener((value) => StopDancing());
-        houseDancingButton.onValueChanged.AddListener(StartHouseDance);
-        waveHipHopDanceButton.onValueChanged.AddListener(StartWaveHipHopDance);
-        macarenaDanceButton.onValueChanged.AddListener(StartHMacarenaDance);
+        SetAnimationButtonsActions();
+        SetDefaultAnimation();
     }
 
-    public void StopDancing()
-    {
-        PlayerAnimations.Instance.StopDancing();
+    void SetDefaultAnimation()
+    { 
+        waveHipHopDanceToggle.Select();
+        waveHipHopDanceToggle.onValueChanged.Invoke(true);
     }
 
-    public void StartHouseDance(bool active)
+    void SetAnimationButtonsActions()
     {
-        PlayerAnimations.Instance.SetActiveHouseDancing(active);
+        houseDancingToggle.onValueChanged.AddListener(PlayerAnimations.Instance.SetActiveHouseDancing);
+        waveHipHopDanceToggle.onValueChanged.AddListener(PlayerAnimations.Instance.SetActiveWaveHipHopDance);
+        macarenaDanceToggle.onValueChanged.AddListener(PlayerAnimations.Instance.SetActiveMacarenaDance);
+        startSelectedAnimationButton.onClick.AddListener(StartSelectedAnimation);
     }
 
-    public void StartWaveHipHopDance(bool active)
+    public void StartSelectedAnimation()
     {
-        PlayerAnimations.Instance.SetActiveWaveHipHopDance(active);
-    }
-
-    public void StartHMacarenaDance(bool active)
-    {
-        PlayerAnimations.Instance.SetActiveMacarenaDance(active);
+        GameManager.Instance.LoadShootingScene();
     }
 }
