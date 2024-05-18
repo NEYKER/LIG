@@ -31,6 +31,12 @@ public class GravitonBullet : Bullet
     {
         for (int i = 0; i < rigidbodies.Count; i++)
         {
+            if (!rigidbodies[i])
+            {
+                rigidbodies.RemoveAt(i);
+                i--;
+                continue;
+            }
             rigidbodies[i].useGravity = true;
         }
         DestroyImmediate(gameObject);
@@ -74,6 +80,12 @@ public class GravitonBullet : Bullet
             Collider collider = tempColliders.Find(x => x.GetComponent<Rigidbody>() == rigidbodies[i]);
             if (collider == null)
             {
+                if (!rigidbodies[i])
+                {
+                    rigidbodies.RemoveAt(i);
+                    i--;
+                    continue;
+                }
                 rigidbodies[i].useGravity = true;
                 rigidbodies.RemoveAt(i);
                 i--;
