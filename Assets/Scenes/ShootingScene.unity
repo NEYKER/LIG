@@ -10604,7 +10604,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 421618663}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.933, y: 0.056682516, z: 0.725379}
+  m_LocalPosition: {x: 4.89, y: 0.056682516, z: 0.725379}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1223408296}
@@ -57686,6 +57686,7 @@ GameObject:
   - component: {fileID: 1928524486}
   - component: {fileID: 1928524485}
   - component: {fileID: 1928524484}
+  - component: {fileID: 1928524489}
   m_Layer: 0
   m_Name: Weapon 003
   m_TagString: Untagged
@@ -57780,7 +57781,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928524483}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.163, y: 0.056682516, z: 0.725379}
+  m_LocalPosition: {x: 4.025, y: 0.056682516, z: 0.725379}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1943972131}
@@ -57788,6 +57789,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1928524489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928524483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b071d73c435b0254f9789d9f6e7d0670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parabollicBulletScriptable: {fileID: 11400000, guid: a30288b26c4f49f4b88454aa8d698784, type: 2}
+  gunBarrel: {fileID: 1053235774}
 --- !u!1 &1931923655
 GameObject:
   m_ObjectHideFlags: 0
@@ -64490,7 +64505,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963409545523199051}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.492732, y: 0.056682516, z: 0.725379}
+  m_LocalPosition: {x: 5.704, y: 0.056682516, z: 0.725379}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 722747435}

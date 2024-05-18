@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 5842301162405414565}
   - component: {fileID: 5842301162405414618}
   - component: {fileID: 5842301162405414619}
-  - component: {fileID: 5842301162405414566}
   - component: {fileID: 5842301162405414567}
+  - component: {fileID: 3081470990603691030}
   m_Layer: 0
-  m_Name: ParabollicBullet
+  m_Name: ExplosionBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 5842301162405414616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.495, y: 0.242, z: 1.687}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: be83fda483069404ca4c11132d6dbc14, type: 2}
+  - {fileID: 2100000, guid: 16be25a1fe6a28842967e461f83e81d1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,18 +97,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5842301162405414566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5842301162405414616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bf451d042c17d344a12f65778020309, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &5842301162405414567
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -125,3 +113,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3081470990603691030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5842301162405414616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 006ddb01686592b4eb7181a227f7fa9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionForce: 1500
+  explosionRadius: 10
+  explosionDelay: 1

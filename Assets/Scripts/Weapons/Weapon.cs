@@ -3,7 +3,7 @@ using System.Collections;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(MeshCollider))]
-public class ParabollicWeapon : MonoBehaviour, IWeapon
+public class Weapon : MonoBehaviour, IWeapon
 {
     [SerializeField] WeaponScriptable parabollicBulletScriptable;
     [SerializeField] Transform gunBarrel;
