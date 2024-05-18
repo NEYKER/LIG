@@ -3,11 +3,13 @@ using System.Collections;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(MeshCollider))]
+[RequireComponent(typeof(Animator))]
 public class Weapon : MonoBehaviour, IWeapon
 {
     [SerializeField] WeaponScriptable parabollicBulletScriptable;
     [SerializeField] Transform gunBarrel;
 
+    Animator animator;
     MeshCollider meshCollider;
     Rigidbody rigidBody;
     int amountOfBulletsInMagazine;
@@ -19,6 +21,7 @@ public class Weapon : MonoBehaviour, IWeapon
 
     void Awake()
     {
+        animator = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody>();
         meshCollider = GetComponent<MeshCollider>();
     }
@@ -65,11 +68,15 @@ public class Weapon : MonoBehaviour, IWeapon
 
     public IEnumerator WaitingReloadWeapon()
     {
+        animator.SetBool("isReloading", true);
+        animator.SetFloat("animationSpeedMultipliler", 1 / parabollicBulletScriptable.ReloadTimeInSeconds );
         isReloading = true;
         canShoot = false;
         yield return new WaitForSeconds(parabollicBulletScriptable.ReloadTimeInSeconds);
         canShoot = true;
         isReloading = false;
+        animator.SetBool("isReloading", false);
+        animator.SetFloat("animationSpeedMultipliler", 1);
         amountOfBulletsInMagazine = parabollicBulletScriptable.BulletsPerMagazine;
     }
 }

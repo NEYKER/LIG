@@ -6,7 +6,7 @@ public class WeaponScriptable : ScriptableObject
     [SerializeField] Bullet bullet;
 
     [SerializeField] float shootingCadence;
-    [SerializeField] float reloadTime;
+    [SerializeField] [Range(0,10)] float reloadTime;
     [SerializeField] float pushForce;
 
     [SerializeField] int bulletsPerMagazine;

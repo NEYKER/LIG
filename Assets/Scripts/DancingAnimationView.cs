@@ -15,7 +15,8 @@ public class DancingAnimationView : MonoBehaviour
     }
 
     void SetDefaultAnimation()
-    { 
+    {
+        PlayerAnimations.Instance.StopAllAnimations();
         waveHipHopDanceToggle.Select();
         waveHipHopDanceToggle.onValueChanged.Invoke(true);
     }

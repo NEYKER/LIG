@@ -37,10 +37,18 @@ public class PlayerAnimations : MonoBehaviour
         SetAnimationByAnimatorParameter(PlayerPrefs.GetString(playerPrefCurrentAnimation));
     }
 
+    public void StopAllAnimations()
+    {
+        animator.SetBool(houseDancing, false);
+        animator.SetBool(waveHipHopDance, false);
+        animator.SetBool(macarenaDance, false);
+        animator.SetBool(stopAnimations, true);
+    }
+
     void SetAnimationByAnimatorParameter(string animationParameter)
     {
         StartAnimation();
-        SaveCurrentAnimation(houseDancing);
+        SaveCurrentAnimation(animationParameter);
         animator.SetBool(animationParameter, true);
     }
 

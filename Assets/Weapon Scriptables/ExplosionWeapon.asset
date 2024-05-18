@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 3081470990603691030, guid: bda2d0fbf09149e498f1edb1f0924834, type: 3}
   shootingCadence: 0.5
-  reloadTime: 5
+  reloadTime: 5.99
   pushForce: 30
   bulletsPerMagazine: 10
